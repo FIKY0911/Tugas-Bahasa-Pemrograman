@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CafeIN</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome (untuk ikon hamburger) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar-section">
+        <a href="#" class="navbar-logo-brand">Cafe<span>IN</span></a>
+
+        <div class="navbar-links">
+            <a href="#">Beranda</a>
+            <a href="#section-about">Tentang Kami</a>
+            <a href="#section-menu">Menu</a>
+            <a href="#section-contact">Kontak</a>
+        </div>
+
+        <div class="navbar-icons">
+            <a href="#" id="icon-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#" id="icon-cart"><i class="fa-solid fa-shopping-cart"></i></a>
+            <a href="#" id="icon-menu"><i class="fa-solid fa-bars"></i></a>
+
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero-banner" id="section-hero">
+        <main class="hero-banner-content">
+            <h2>Selamat Datang di <span>CafeIN</span></h2>
+            <p>Nikmati secangkir kopi terbaik dengan suasana nyaman dan tenang.</p>
+            <a href="#section-menu" class="btn-hero-cta">Lihat Menu</a>
+        </main>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section class="about-section" id="section-about">
+        <div class="about-section-image">
+            <img src="../images/img-about.jpg" alt="Tentang CafeIN" />
+        </div>
+        <div class="about-section-content">
+            <h2>Tentang <span>Kami</span></h2>
+            <p>
+                CafeIN adalah tempat terbaik untuk menikmati kopi berkualitas dengan suasana yang nyaman dan hangat.
+                Kami menyajikan berbagai jenis kopi pilihan dan makanan ringan yang menggugah selera.
+            </p>
+            <p>
+                Datang dan rasakan pengalaman berbeda di CafeIN. Kami siap menyambut Anda dengan pelayanan terbaik.
+            </p>
+            <a href="#section-menu" class="btn-about-cta">Lihat Menu</a>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Menu Section Start -->
+    <section class="menu-section" id="section-menu">
+        <h2 class="menu-title">Menu <span>Kopi</span></h2>
+        <p class="menu-subtitle">Nikmati pilihan kopi terbaik kami</p>
+    
+        <div class="menu-items-container">
+            <div class="menu-item-card">
+                <img src="images/espresso.webp" alt="Espresso" />
+                <h3>Espresso</h3>
+                <p>Kopi hitam pekat dengan rasa kuat dan khas.</p>
+                <span class="item-price">Rp 18.000</span>
+                <a href="#" class="btn-order" data-name="espresso" data-price="18000">Pesan Sekarang</a>
+            </div>
+    
+            <div class="menu-item-card">
+                <img src="images/latte.webp" alt="Latte" />
+                <h3>Latte</h3>
+                <p>Perpaduan espresso dan susu yang creamy dan lembut.</p>
+                <span class="item-price">Rp 22.000</span>
+                <a href="#" class="btn-order" data-name="Latte" data-price="22000">Pesan Sekarang</a>
+            </div>
+    
+            <div class="menu-item-card">
+                <img src="images/cappuccino.webp" alt="Cappuccino" />
+                <h3>Cappuccino</h3>
+                <p>Espresso dengan buih susu yang halus dan nikmat.</p>
+                <span class="item-price">Rp 24.000</span>
+                <a href="#" class="btn-order" data-name="Cappuccino" data-price="24000">Pesan Sekarang</a>
+            </div>
+        </div>
+    </section>
+    <!-- Menu Section End -->
+
+    <!-- Sidebar Keranjang -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <button id="close-cart">Tutup</button>
+        <div id="cart-items">
+            <p>Keranjang kosong</p>
+        </div>
+    </div>
+
+    <!-- Contact Section Start -->
+    <section class="contact-section" id="section-contact">
+        <h2 class="contact-title">Hubungi <span>Kami</span></h2>
+        <p class="contact-subtitle">Kami siap melayani Anda</p>
+    
+        <div class="contact-content">
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" name="name" placeholder="Nama Anda" required />
+                <input type="email" name="email" placeholder="Email Anda" required />
+                <textarea name="message" rows="5" placeholder="Pesan Anda..." required></textarea>
+                <button type="submit" class="btn-contact">Kirim Pesan</button>
+            </form>
+    
+            <div class="contact-info">
+                <h3>Informasi Kontak</h3>
+                <p><i data-feather="map-pin"></i> Jl. Kopi No. 1, Jakarta</p>
+                <p><i data-feather="phone"></i> +62 812-3456-7890</p>
+                <p><i data-feather="mail"></i> cafein@email.com</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Cafe<span>IN</span></h2>
+                <p>Nikmati kopi terbaik dalam suasana nyaman setiap hari.</p>
+            </div>
+    
+            <div class="footer-links">
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="#section-hero">Beranda</a></li>
+                    <li><a href="#section-about">Tentang Kami</a></li>
+                    <li><a href="#section-menu">Menu</a></li>
+                    <li><a href="#section-contact">Kontak</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-social">
+                <h3>Ikuti Kami</h3>
+                <a href="" target="_blank"><i data-feather="instagram"></i></a>
+                <a href="" target="_blank"><i data-feather="facebook"></i></a>
+                <a href="" target="_blank"><i data-feather="linkedin"></i></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 CafeIN. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <script>
+        feather.replace();
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
