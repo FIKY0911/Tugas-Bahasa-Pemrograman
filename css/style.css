@@ -359,11 +359,26 @@ margin-bottom: 1rem;
     margin-bottom: 3rem;
 }
 
+.contact-section .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #fefae0;
+    align-items: center;
+}
+
+.contact-section .row iframe {
+    flex: 1 1 45rem;
+    width: 50%;
+    object-fit: cover;
+    
+}
+
 .contact-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+    padding: 1rem 1rem;
 }
 
 .contact-form {
@@ -544,6 +559,14 @@ margin-bottom: 1rem;
 
     .contact-info {
         text-align: center;
+    }
+
+    .contact-section .row {
+        flex-wrap: wrap;
+    }
+
+    .contact-section .row .contact-content {
+        width: 100%;
     }
 }
 
