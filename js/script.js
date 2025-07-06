@@ -47,7 +47,7 @@ orderButtons.forEach(button => {
 
         cart.push({ name: itemName, price: itemPrice });
         renderCart();
-        alert(`${itemName} telah ditambahkan ke keranjang.`);
+        // alert(`${itemName} telah ditambahkan ke keranjang.`);
     });
 });
 
