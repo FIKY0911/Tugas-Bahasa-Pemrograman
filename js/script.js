@@ -13,7 +13,7 @@ navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navbarLinks.classList.remove('active');
     });
-});
+} );
 
 // Cart System
 const cartSidebar = document.getElementById("cart-sidebar");
