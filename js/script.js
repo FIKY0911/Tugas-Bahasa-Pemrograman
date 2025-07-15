@@ -83,3 +83,29 @@ function removeFromCart(index) {
     cart.splice(index, 1);
     renderCart();
 }
+
+function showToast(message = "Pesanan berhasil diproses!") {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000); // toast hilang setelah 3 detik
+}
+
+const checkoutCart = document.getElementById("checkout-cart");
+
+checkoutCart.addEventListener("click", () => {
+  cart.forEach((item) => {
+    const card = document.querySelector(
+      `.menu-item-card[data-name="${item.name}"]`
+    );
+    if (card) card.remove();
+  });
+
+  cart = [];
+  renderCart();
+  showToast();i
+});
+
